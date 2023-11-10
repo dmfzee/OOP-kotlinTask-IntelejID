@@ -14,12 +14,12 @@ class Hero {
     }
 
     fun profile() {
-        println("========= Profile =========")
+        println("\n========= Profile =========")
         println("Name: $name")
         println("Age: $age")
         println("Height: $height")
         println("Health: $health")
-        println("===========================")
+        println("===========================\n")
     }
 
     private fun checkHealth() {
@@ -48,7 +48,36 @@ class Hero {
 
       Contoh fungsi bisa mengikuti fungsi jalan() diatas.
 
-    */
-    
-}
 
+    */
+    fun lari() {
+        checkHealth()
+        println("$name sedang berlari...")
+        health -= 2
+    }
+
+    fun makan() {
+        checkHealth()
+        println("$name sedang makan...")
+        health += 2
+    }
+
+    fun minum() {
+        checkHealth()
+        println("$name sedang minum...")
+        health += 2
+    }
+
+    fun lompat() {
+        checkHealth()
+        println("$name sedang lompat...")
+        health -= 2
+    }
+
+    fun duduk() {
+        checkHealth()
+        println("$name sedang duduk...")
+        health += 1
+    }
+
+}

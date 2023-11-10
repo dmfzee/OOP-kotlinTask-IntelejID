@@ -7,7 +7,7 @@ fun main() {
      * Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero
      *
      */
-
+    val hero = Hero()
 
     /**
      * Latihan 2
@@ -15,7 +15,7 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
-
+    hero.setProfile("Dicki Mahfud Fauzi", 25, 168)
 
 
     /**
@@ -23,6 +23,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
+    hero.profile()
 
 
 
@@ -43,7 +44,6 @@ fun main() {
     Dasa Impi ->7: jalan 1x, lari 2x, makan 3x, minum 4x, lompat 5x, duduk 6x
     LogicLiberators -> jalan 2x, lari 1x, makan 5x, minum 2x, lompat 3x, duduk 1x
     Fifty-One -> jalan 2x, lari 1x, makan 2x, minum 1x, lompat 2x, duduk 4x
-    Fantastic Ten -> jalan 2x, lari 4x, makan 3x, minum 2x, lompat 1x, duduk 2x
 
     ===============Class B Morning===============
     Infinine -> jalan 2x, lari 4x, makan 3x, minum 2x, lompat 1x, duduk 2x
@@ -66,6 +66,30 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
+    println("----------------LogicLiberators - Morning A----------------")
+    repeat(2) {
+        hero.jalan()
+    }
+
+    repeat(1) {
+        hero.lari()
+    }
+
+    repeat(5) {
+        hero.makan()
+    }
+
+    repeat(2) {
+        hero.minum()
+    }
+
+    repeat(3) {
+        hero.lompat()
+    }
+    repeat(1) {
+        hero.duduk()
+    }
+
 
 
 
@@ -74,7 +98,6 @@ fun main() {
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
-
+    hero.profile()
 
 }
